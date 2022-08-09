@@ -22,13 +22,13 @@ class Robot:
         print(f'You have 3 choices. They are: Rocket Punch(1), Rocket Kick(2) & Lazer Beam(3)! ' )
         user_choice = input(f'Which of these 3 attacks would you like to use against your opponenet? ')
 
-        if user_choice == ("Rocket Punch",1):
-            self.active_weapon == attack_one
-        elif user_choice == ("Rocket Kick",2):
-            self.active_weapon==attack_two
-        elif user_choice == ("Lazer Beam",3):
-            self.active_weapon==attack_three
-        elif user_choice == ("Skip Turn", 4):
+        if user_choice == ("Rocket Punch",'1'):
+            attack_one ==self.active_weapon
+        elif user_choice == ("Rocket Kick",'2'):
+            attack_two == self.active_weapon
+        elif user_choice == ('3'):
+            attack_three == self.active_weapon
+        elif user_choice == ("Skip Turn", "4"):
             self.active_weapon==attack_four
 
     def attack(self,dinosaur):
